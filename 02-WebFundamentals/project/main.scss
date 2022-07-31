@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Roboto:ital,wght@0,300;0,400;0,500;1,100&display=swap');
+
+$font-logo: "Boogaloo" , cursive;
+$font-body: "Roboto:wght@0,300" , sans-serif;
+$font-body-bold: "Roboto", sans-serif;
+
+$color-primary: rgb(245, 247, 236);
+$color-secondary: rgb(36, 36, 89);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 768px;
+    font-family: $font-body;
+    background-color: $color-primary;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: $font-logo;
+    font-size: 50px;
+    color: $color-secondary;
+}
+
+.button {
+    display: block;
+    width: 100px;
+    background-color: $color-primary;
+}
+
+.bluebutton {
+    display: block;
+    width: 100px;
+    background-color: $color-secondary;
+}
+
+
+.bold {
+    font-family: $font-body-bold;
+}
+
+header {
+
+}
+
