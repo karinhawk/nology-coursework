@@ -10,6 +10,7 @@ sans-serif;
 $color-primary: rgb(246, 247, 242);
 $color-secondary: rgb(36, 36, 89);
 $color-tertiary: rgb(14, 190, 234);
+$color-footer: rgb(243, 241, 210);
 
 
 * {
@@ -19,6 +20,12 @@ $color-tertiary: rgb(14, 190, 234);
     font-family: $font-body;
     font-weight: 300;
     background-color: $color-primary;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 a:link,
@@ -42,25 +49,32 @@ a:visited {
     border-radius: 10px;
     text-align: center;
     padding: 15px 0;
+    font-weight: 500;
+    font-size: 25px;
 }
 
 .bluebutton {
     display: block;
-    width: 200px;
     height: auto;
+    margin: 50px;
     background-color: $color-secondary;
     color: $color-primary;
     border-radius: 10px;
     text-align: center;
-    padding: 15px 0;
+    padding: 15px 50px;
+    font-weight: 500;
+    font-size: 25px;
 }
 
 .footlink {
     display: block;
-    height: 50px;
-    background-color: rgb(255, 241, 171);
+    height: 30px;
+    width: auto;
+    background-color:$color-footer;
     text-align: center;
-    padding: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 8px 100px;
 }
 
 .bold {
@@ -93,26 +107,38 @@ header {
 
         h1 {            
             color: $color-tertiary;
+            font-weight: 600;
+            font-size: 45px;
         }
 
         img {
-            padding: 20px 0;
+            padding: 40px 0;
             width: 100%;
         }
 
         h2 {            
             color: $color-secondary;
+            padding: 20px 0;
+            font-weight: 500;
+            font-size: 30px;
         }
 
         h3 {            
             color: $color-tertiary;
+            padding: 20px 0;
+            font-weight: 500;
+            font-size: 25px;
         }
 
         h4 {            
             color: $color-secondary;
+            padding: 20px 0;
+            font-size: 20px;
         }
 
-        a {}
+        #blue1 {
+
+        }
 
         h2 {}
     }
@@ -126,16 +152,40 @@ content {
     justify-content: space-evenly;
 
     #peng1 {
-
+        display: flex;
+        flex-direction: row;
+        h3 {
+            height: 50px;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
     #peng2 {
-
+        display: flex;
+        flex-direction: row;
+        h3 {
+            height: 50px;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
     #peng3 {
-
+        display: flex;
+        flex-direction: row;
+        h3 {
+            height: 50px;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
     #peng4 {
-
+        display: flex;
+        flex-direction: row;
+        h3 {
+            height: 50px;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
     }
 
@@ -144,4 +194,5 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $color-footer;    
 }
