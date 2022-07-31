@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Roboto:ital,wght@0,300;0,400;0,500;1,100&display=swap');
 
-$font-logo: "Boogaloo" , cursive;
-$font-body: "Roboto:wght@0,300" , sans-serif;
-$font-body-bold: "Roboto", sans-serif;
+$font-logo: "Boogaloo",
+cursive;
+$font-body: "Roboto",
+sans-serif;
+$font-body-bold: "Roboto",
+sans-serif;
 
-$color-primary: rgb(245, 247, 236);
+$color-primary: rgb(246, 247, 242);
 $color-secondary: rgb(36, 36, 89);
+$color-tertiary: rgb(14, 190, 234);
 
 
 * {
@@ -13,6 +17,7 @@ $color-secondary: rgb(36, 36, 89);
     padding: 0;
     max-width: 768px;
     font-family: $font-body;
+    font-weight: 300;
     background-color: $color-primary;
 }
 
@@ -30,21 +35,113 @@ a:visited {
 .button {
     display: block;
     width: 100px;
+    height: auto;
+    border: 1px solid $color-secondary;
     background-color: $color-primary;
+    color: $color-secondary;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 0;
 }
 
 .bluebutton {
     display: block;
-    width: 100px;
+    width: 200px;
+    height: auto;
     background-color: $color-secondary;
+    color: $color-primary;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 0;
 }
 
+.footlink {
+    display: block;
+    height: 50px;
+    background-color: rgb(255, 241, 171);
+    text-align: center;
+    padding: 20px;
+}
 
 .bold {
-    font-family: $font-body-bold;
+    font-weight: 500;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.top {
+    height: 10vh;
+    background-color: $color-primary;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header {
+    padding: 50px 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    div {
+        text-align: center;
+        align-items: center;
+
+        h1 {            
+            color: $color-tertiary;
+        }
+
+        img {
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        h2 {            
+            color: $color-secondary;
+        }
+
+        h3 {            
+            color: $color-tertiary;
+        }
+
+        h4 {            
+            color: $color-secondary;
+        }
+
+        a {}
+
+        h2 {}
+    }
 }
 
+content {
+    padding: 50px 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    #peng1 {
+
+    }
+    #peng2 {
+
+    }
+    #peng3 {
+
+    }
+    #peng4 {
+
+    }
+    }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
