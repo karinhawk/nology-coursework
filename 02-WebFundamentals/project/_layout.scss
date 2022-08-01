@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top {
+    height: 10vh;
+    background-color: $color-primary;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 50px 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        text-align: center;
+        align-items: center;
+
+        h1 {
+            color: $color-tertiary;
+            font-weight: 600;
+            font-size: 35px;
+        }
+
+        img {
+            padding: 40px 0;
+            width: 100%;
+            box-shadow: 0 0 15px 0px rgb(241, 244, 222);
+            clip-path: inset(0px -20px 0px -20px);
+            position: relative;
+        }
+
+        h2 {
+            color: $color-secondary;
+            padding: 20px 0;
+            font-weight: 500;
+            font-size: 30px;
+        }
+
+        h3 {
+            color: $color-tertiary;
+            padding: 20px 0;
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+        h4 {
+            color: $color-secondary;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+content {
+    padding: 0 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: $color-secondary;
+
+    #peng1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            width: 300px;
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+
+    #peng2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            width: 300px;
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+
+    #peng3 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            width: 400px;
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+
+    #peng4 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            width: 300px;
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-footer;
+}

@@ -1,0 +1,46 @@
+.logo {
+    font-family: $font-logo;
+    font-size: 50px;
+    color: $color-secondary;
+}
+
+.button {
+    display: block;
+    width: 100px;
+    height: auto;
+    border: 1px solid $color-secondary;
+    background-color: $color-primary;
+    color: $color-secondary;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 5px;
+    font-weight: 500;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.bluebutton {
+    display: block;
+    height: auto;
+    margin: 50px;
+    background-color: $color-secondary;
+    color: $color-primary;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 50px;
+    font-weight: 500;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.footlink {
+    display: block;
+    height: 30px;
+    width: auto;
+    background-color: $color-footer;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 8px 100px;
+
+}
