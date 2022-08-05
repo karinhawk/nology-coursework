@@ -33,14 +33,22 @@ let getLargestNumber = (number1, number2, number3) => {
     }
     return largest;
 }
-console.log(getLargestNumber(4, 6, 9));
+console.log(getLargestNumber(4, 6, 10));
 
 
 
 //Write a function that takes an array of names and returns the last name from the array of names.
-let getLastName = () => {
-
+let getLastName = (names) => {
+    let finalName = (names.length - 1);
+    
+    for (let index=0; index < names.length; index++) {
+        if (index == names.length - 1 ) {
+            finalName = names[index];
+        }
+    }
+    return finalName;
 }
+console.log(getLastName(["james", "jimmy", "karin", "grace", "max", "holly"]));
 
 //Write a function that takes an array of numbers and returns true if all of the numbers are positive.
 // It should return false if there are one or more negative numbers in the array.
