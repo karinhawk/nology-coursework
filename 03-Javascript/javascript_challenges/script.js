@@ -21,9 +21,21 @@ const convertDaysToAge = (days) => {
 (convertDaysToAge(26747));
 
 //Write a function that takes three numbers and returns the largest of the three numbers.
+//
 let getLargestNumber = (number1, number2, number3) => {
+    let numbers = [number1 , number2 , number3];
+    let largest = 0;
 
+    for (let index=0; index < numbers.length; index++) {
+        if (numbers[index] > largest) {
+            largest = numbers[index];
+        }
+    }
+    return largest;
 }
+console.log(getLargestNumber(4, 6, 9));
+
+
 
 //Write a function that takes an array of names and returns the last name from the array of names.
 let getLastName = () => {
