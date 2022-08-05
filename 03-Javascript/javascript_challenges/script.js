@@ -10,9 +10,15 @@ console.log(isNumberPositive(4));
 console.log(isNumberPositive(-12));
 
 //Write a function that takes a number of days and converts it into an age.
-let convertDaysToAge = (days) => {
-//365 days in year so divide by 365
+//365 days in year so divide by 365. need to log to 2dp.
+const convertDaysToAge = (days) => {
+
+    const convertDaysToAge = days / 365;
+    let convertDaysToAgeOutput = convertDaysToAge.toFixed(2);
+    const message = `${days} days on earth equals ${convertDaysToAgeOutput} earth years. Happy Birthday!`;
+    console.log(message);
 }
+(convertDaysToAge(26747));
 
 //Write a function that takes three numbers and returns the largest of the three numbers.
 let getLargestNumber = (number1, number2, number3) => {
